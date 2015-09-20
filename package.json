@@ -1,0 +1,22 @@
+{
+  "name": "sandbox-node-app",
+  "version": "1.0.0",
+  "description": "node app for fun",
+  "main": "sandbox-node-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcpengelly/sandbox-node-app.git"
+  },
+  "author": "Matthew Pengelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcpengelly/sandbox-node-app/issues"
+  },
+  "homepage": "https://github.com/mcpengelly/sandbox-node-app",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
