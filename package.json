@@ -1,8 +1,13 @@
 {
   "name": "sandbox-node-app",
   "version": "1.0.0",
-  "description": "node app for fun",
+  "description": "a small node app",
   "main": "sandbox-node-app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express3-handlebars": "^0.5.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/mcpengelly/sandbox-node-app/issues"
   },
-  "homepage": "https://github.com/mcpengelly/sandbox-node-app",
-  "dependencies": {
-    "express": "^4.13.3"
-  }
+  "homepage": "https://github.com/mcpengelly/sandbox-node-app"
 }
