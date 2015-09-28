@@ -3,9 +3,14 @@ var tips = [
 	"Learn to use a text editor.",
 	"Sometimes lightning goes backward.",
 	"Don't feel like making anymore tips",
+	"Sounding smart doesnt mean anything if you cant back it up."
 ];
 
-exports.getFortune = function () {
-	var randomIndex = Math.floor(Math.random() * tips.length);
-	return tips[randomIndex];
+module.exports = {
+    tipper: {
+        myFunc: function() {
+            var randomIndex = Math.floor(Math.random() * tips.length);
+						return tips[randomIndex];
+        }
+    }
 };
