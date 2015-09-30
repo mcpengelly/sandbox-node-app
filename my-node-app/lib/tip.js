@@ -5,7 +5,7 @@ var tips = [
 	"Don't feel like making anymore tips",
 	"Sounding smart doesnt mean anything if you cant back it up."
 ];
-
+/*
 module.exports = {
     tipper: {
         getRandomTip: function() {
@@ -13,14 +13,11 @@ module.exports = {
 						return tips[randomIndex];
         }
     }
-};
+};*/
 
-/*
-module.exports = {
-		getRandomTip: function () {
-		tips = this.tips;
+
+exports.getRandomTip = function () {
 		var randomIndex = Math.floor(Math.random() * tips.length);
 		return tips[randomIndex];
-	}
 };
-*/
+

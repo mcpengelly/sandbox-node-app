@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 
 app.get('/about', function (req, res) {
 	//
-  res.render('about', { tip: tip.tipper.getRandomTip() });
+  res.render('about', { tip: tip.getRandomTip() });
 });
 
 app.use(function (req, res) {
