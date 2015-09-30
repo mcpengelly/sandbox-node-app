@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var tipGiver = require('./lib/tip.js');
+var tip = require('./lib/tip.js');
 
 app.set('title', "Test site");
 app.set('port', process.env.PORT || 3000);
@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 
 app.get('/about', function (req, res) {
 	//
-  res.render('about', { tip: tipGiver.tipper.myFunc() });
+  res.render('about', { tip: tip.tipper.getRandomTip() });
 });
 
 app.use(function (req, res) {

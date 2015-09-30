@@ -8,9 +8,19 @@ var tips = [
 
 module.exports = {
     tipper: {
-        myFunc: function() {
+        getRandomTip: function() {
             var randomIndex = Math.floor(Math.random() * tips.length);
 						return tips[randomIndex];
         }
     }
 };
+
+/*
+module.exports = {
+		getRandomTip: function () {
+		tips = this.tips;
+		var randomIndex = Math.floor(Math.random() * tips.length);
+		return tips[randomIndex];
+	}
+};
+*/
