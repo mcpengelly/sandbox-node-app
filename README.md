@@ -1,7 +1,7 @@
-# basic node website
-## how to run the app:
-- clone repo and navigate to project folder
-- enter 'npm install' to install project dependencies
-- navigate to folder containing sandbox-node-app.js
-- enter 'node sandbox-node-app.js' to start to server
+# Experimenting with node
+## How to run web app:
+- clone repo and cd into it
+- type 'npm install' from the terminal to install project dependencies
+- cd to sandbox-node-app/site
+- enter 'node app.js' to start the server
 - in an internet browser enter localhost:3000

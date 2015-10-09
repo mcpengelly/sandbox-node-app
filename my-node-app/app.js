@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var tip = require('./lib/tip.js');
+var _ = require('lodash');
 
 app.set('title', "Test site");
 app.set('port', process.env.PORT || 3000);
