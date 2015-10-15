@@ -5,7 +5,8 @@
   "main": "sandbox-node-app.js",
   "dependencies": {
     "express": "^4.13.3",
-    "express3-handlebars": "^0.5.2"
+    "express3-handlebars": "^0.5.2",
+    "lodash": "~3.10.1"
   },
   "devDependencies": {
     "chai": "^3.3.0",
