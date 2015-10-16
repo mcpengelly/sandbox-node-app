@@ -10,7 +10,7 @@ suite('Cross page tests', function() {
 
 	//headless browser test: request group rate request came from /tours/hood-river
 	test('requesting a group rate quote from the HOOD RIVER tour page', function(done) {
-		 this.timeout(100000);
+		 this.timeout(100000); // override mocha timeout
 		 var referrer = 'http://localhost:3000/tours/hood-river';
 		 browser.visit(referrer, function() {
 		 	browser.clickLink('.requestGroupRate', function() {
@@ -21,7 +21,7 @@ suite('Cross page tests', function() {
 	});
 
 	test('requesting a group rate quote from the OREGON COAST tour page', function(done) {
-		 this.timeout(100000);
+		 this.timeout(100000); // override mocha timeout
 		 var referrer = 'http://localhost:3000/tours/oregon-coast';
 		 browser.visit(referrer, function() {
 		 	browser.clickLink('.requestGroupRate', function() {

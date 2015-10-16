@@ -1,9 +1,9 @@
 module.exports = function(grunt) {
 	//load plugins for grunt
 	[
-		grunt.cafe.mocha,
-		grunt.contrib.jshint,
-		grunt.exec
+		'grunt-cafe-mocha',
+		'grunt-contrib-jshint',
+		'grunt-exec'
 	].forEach(function (task) {
 		grunt.loadNpmTasks(task);
 	});
@@ -11,16 +11,18 @@ module.exports = function(grunt) {
 	//configure plugins
 	grunt.initConfig({
 		cafemocha: {
-			all: { src: 'qa/test-*.js', options : {ul: 'tdd'} }
+			all: { src: 'qa/tests-*.js', options : {ul: 'tdd'} }
 		},
 		jshint: {
-			app: ['meadowlark.js', 'public/js/**/*.js', 'lib/**/*.js'],
-			qa: ['Gruntfile.js', 'public/qa/**/*.js', 'qa/**/*.js'],
-			exec: { linkchecker: { cmd: 'linkchecker http://localhost/3000'}}
-	},
+			app: ['my-node-app/app.js', 'my-node-app/lib/*.js', 'lib/*.js'],
+			qa: ['Gruntfile.js', 'my-node-app/public/qa/*.js', 'public/qa/*.js']
+		},
+		exec: {
+			//linkchecker: { cmd: 'linkchecker http://localhost/3000'
+		}
+		//explore grunt.option plugin to paramaterize
 	});
 
 	//register tasks
-	//grunt.registerTask('default', ['cafemocha', 'jshint', 'exec']);
 	grunt.registerTask('default', ['cafemocha', 'jshint']);
 };
