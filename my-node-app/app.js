@@ -3,7 +3,7 @@ var app = express();
 var tip = require('./lib/tip.js');
 var _ = require('lodash');
 
-app.set('title', "Test site");
+app.set('title', " ");
 app.set('port', process.env.PORT || 3000);
 
 app.use(express.static(__dirname + '/public'));
@@ -26,6 +26,10 @@ app.get('/about', function (req, res) {
 
 app.get('/tours/hood-river', function(req, res) {
   res.render('tours/hood-river');
+});
+
+app.get('/tours/oregon-coast', function(req, res) {
+  res.render('tours/oregon-coast');
 });
 
 app.get('/tours/request-group-rate', function(req, res) {

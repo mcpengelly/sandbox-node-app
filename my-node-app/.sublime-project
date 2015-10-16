@@ -1,6 +1,6 @@
 "ternjs": {
-    "exclude": ["wordpress/**", "node_modules/**"],
-    "libs": ["browser", "jquery"],
+    "exclude": ["wordpress/**"],
+    "libs": ["browser", "jquery", node],
     "plugins": {
         "requirejs": {
             "baseURL": "./js"
